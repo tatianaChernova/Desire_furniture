@@ -16,7 +16,7 @@ var deploy = require('gulp-gh-pages');
 gulp.task('deploy', function () {
   return gulp.src("./dist/**/*")
     .pipe(deploy({ 
-      remoteUrl: "https://github.com/tatianaChernova/tatianaChernova.github.io.git",
+      remoteUrl: "https://github.com/tatianaChernova/Desire_furniture",
       branch: "main"
     }))
 });

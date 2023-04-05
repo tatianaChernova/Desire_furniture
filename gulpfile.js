@@ -84,7 +84,7 @@ function watching() {
   watch(['app/*.html']).on('change', browserSync.reload);
 }
 
-gulp.task(‘deploy, [‘build’], , function () {
+gulp.task(‘deploy, [‘build’], function () {
   return gulp.src("./dist/**/*")
     .pipe(deploy())
 });

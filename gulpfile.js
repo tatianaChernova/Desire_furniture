@@ -10,16 +10,16 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
-var gulp = require('gulp');
-var deploy = require('gulp-gh-pages');
+// var gulp = require('gulp');
+// var deploy = require('gulp-gh-pages');
 
-gulp.task('deploy', function () {
-  return gulp.src("./prod/**/*")
-    .pipe(deploy({
-      remoteUrl: "https://github.com/your_github_username_here/your_github_username_here.github.io.git",
-      branch: "master"
-    }))
-});
+// gulp.task('deploy', function () {
+//   return gulp.src("./prod/**/*")
+//     .pipe(deploy({
+//       remoteUrl: "https://github.com/your_github_username_here/your_github_username_here.github.io.git",
+//       branch: "master"
+//     }))
+// });
 
 function browsersync() {
   browserSync.init({

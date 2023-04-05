@@ -9,6 +9,8 @@ const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
+var gulp        = require('gulp');
+var deploy      = require('gulp-gh-pages');
 
 function browsersync() {
   browserSync.init({
@@ -81,6 +83,11 @@ function watching() {
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
+
+gulp.task(‘deploy, [‘build’], , function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 
 exports.styles = styles;
 exports.watching = watching;

@@ -1,7 +1,7 @@
 {
-  "name": "gulp-start",
+  "name": "desire",
   "version": "1.0.0",
-  "description": "",
+  "description": "multipage web-project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,16 @@
   },
   "dependencies": {
     "gift": "^0.10.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatianaChernova/Desire_furniture.git"
+  },
+  "keywords": [
+    "Desire"
+  ],
+  "bugs": {
+    "url": "https://github.com/tatianaChernova/Desire_furniture/issues"
+  },
+  "homepage": "https://github.com/tatianaChernova/Desire_furniture#readme"
 }

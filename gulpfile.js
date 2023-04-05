@@ -9,8 +9,17 @@ const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
-var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
+
+var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./prod/**/*")
+    .pipe(deploy({
+      remoteUrl: "https://github.com/your_github_username_here/your_github_username_here.github.io.git",
+      branch: "master"
+    }))
+});
 
 function browsersync() {
   browserSync.init({
@@ -84,10 +93,6 @@ function watching() {
   watch(['app/*.html']).on('change', browserSync.reload);
 }
 
-gulp.task(‘deploy, [‘build’], function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
 
 exports.styles = styles;
 exports.watching = watching;

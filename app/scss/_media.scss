@@ -371,6 +371,7 @@
     }
 
     .blog-one {
+
         &__tags-title,
         &__comments-title,
         &__comments-name,
@@ -400,9 +401,9 @@
             z-index: 12;
 
             span {
-                background-color: #000;
+                background-color: $default;
                 width: 37px;
-                height: 3px;
+                height: 2px;
                 border-radius: 4px;
                 display: block;
                 margin: 6px 0;
@@ -506,14 +507,17 @@
         &__links {
             padding: 30px 0;
         }
+
         &__link {
             span {
                 display: none;
             }
         }
+
         &__form-input {
             width: 100%;
         }
+
         &__tags-title,
         &__comments-title,
         &__comments-name,
@@ -521,20 +525,25 @@
             font-size: 16px;
             line-height: 27px;
         }
+
         &__comments-item {
             flex-wrap: wrap;
         }
+
         &__comments-avatar {
             width: 45px;
             height: 45px;
         }
+
         &__comments-info {
             margin-top: -46px;
         }
+
         &__comments-name,
         &__comments-date {
             margin-left: 55px;
         }
+
         &__reply {
             padding-top: 20px;
             margin-left: 0;

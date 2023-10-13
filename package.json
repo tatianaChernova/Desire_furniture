@@ -24,7 +24,9 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "gift": "^0.10.2"
+    "gh-pages": "^6.0.0",
+    "gift": "^0.10.2",
+    "magnific-popup": "^1.1.0"
   },
   "repository": {
     "type": "git",
